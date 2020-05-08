@@ -2,8 +2,8 @@ def kmp(text,pat):
     n=len(text)
     m=len(pat)
     lps=[0]*m
-    i=0
     j=0
+    i=0
     
     def LPS(pat,m,lps):
         i=1
