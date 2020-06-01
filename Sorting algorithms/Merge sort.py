@@ -29,7 +29,7 @@ def mergeSort(arr):
 arr = [1,2,3,-1,3,-9]
 print(mergeSort(arr))
 
-
+'''
 ##Without recursion
 def mergeSort(array):
     if len(array)>1:
@@ -60,3 +60,4 @@ def mergeSort(array):
 arr = [1,2,3,-1,3,-9]
 mergeSort(arr)
 print(arr)
+'''
