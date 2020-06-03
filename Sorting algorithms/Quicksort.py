@@ -16,3 +16,29 @@ def quicksort(a,low,high):
     return a
 array=[6,3,2,8,22,55,333,11,8,2,10,98,1,44,109,33]
 print(quicksort(array,0,len(array)-1))
+
+
+
+#Another way to implement quicksort by taking last element as pivot.
+'''
+def quicksort(array):
+    length=len(array)
+    if length<=1:
+        return array
+    else:
+        pivot=array.pop()
+    less=[]
+    greater=[]
+    for ele in array:
+        if ele<pivot:
+            less.append(ele)
+        else:
+            greater.append(ele)
+
+    return quicksort(less)+[pivot]+quicksort(greater)
+        
+
+
+
+print(quicksort([2,3,1,5,7,3,5,4,9,10,23,111]))
+'''
